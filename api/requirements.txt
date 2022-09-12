@@ -1,0 +1,9 @@
+dvc
+flask
+flask_cors
+flask_migrate
+flask_sqlalchemy
+keras
+numpy
+tensorflow
+wget
