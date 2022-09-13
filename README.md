@@ -4,7 +4,6 @@ This is an app with a React/Next front-end where you upload images and get a cla
 
 ## Set up the back-end
 
-- Go to the `api` directory
 - Create a virtual environment with: `python3 -m venv .venv`
 - Activate the virtual environment with: `source .venv/bin/activate`
 - Install all of the dependencies with: `pip3 install -r requirements.txt`
