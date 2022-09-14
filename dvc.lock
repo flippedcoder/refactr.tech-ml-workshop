@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python3 ./api/ml/train.py ./api/ml/models/model.pkl
+    deps:
+    - path: ./api/ml/train.py
+      md5: 1bac040129b385bd1ddc95bf63ff2758
+      size: 2490
+    params:
+      params.yaml:
+        learning_rate: 0.001
+        num_classes: 100
+        num_epochs: 3
+        shuffle: false
+    outs:
+    - path: ./api/ml/models/model.pkl
+      md5: 27ea788b3e9649d6629d21caedf041a1
+      size: 2293986

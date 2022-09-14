@@ -16,5 +16,5 @@ stages:
       - ./api/ml/evaluate.py
       - ./api/ml/models/model.pkl
     metrics:
-      roc.json:
+    - roc.json:
         cache: false
