@@ -4,6 +4,8 @@ flask_cors
 flask_migrate
 flask_sqlalchemy
 keras
+matplotlib
 numpy
+sklearn
 tensorflow
 wget

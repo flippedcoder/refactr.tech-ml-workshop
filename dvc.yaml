@@ -1,0 +1,20 @@
+stages:
+  train:
+    cmd: python3 ./api/ml/train.py ./api/ml/models/model.pkl
+    deps:
+      - ./api/ml/train.py
+    params:
+      - learning_rate
+      - num_epochs
+      - num_classes
+      - shuffle
+    outs:
+      - ./api/ml/models/model.pkl
+  evaluate:
+    cmd: python3 ./api/ml/evaluate.py ./api/ml/models/model.pkl
+    deps:
+      - ./api/ml/evaluate.py
+      - ./api/ml/models/model.pkl
+    metrics:
+      roc.json:
+        cache: false

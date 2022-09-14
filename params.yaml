@@ -1,0 +1,4 @@
+learning_rate: 0.001
+num_epochs: 3
+num_classes: 100
+shuffle: False
